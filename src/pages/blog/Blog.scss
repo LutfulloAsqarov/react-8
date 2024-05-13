@@ -1,0 +1,38 @@
+#blog {
+    padding: 70px 0;
+}
+
+.blog {
+    &__cards {
+        padding: 50px 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__card {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        background: #edf2f4;
+        padding: 50px;
+        border-radius: 20px;
+        &__left {
+            h3 {
+                font-size: 24px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+    &__card-2 {
+        flex-direction: row-reverse;
+    }
+    @media (max-width: 850px) {
+        &__card {
+            flex-direction: column-reverse;
+            padding: 20px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
